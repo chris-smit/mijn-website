@@ -5,21 +5,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mijn eerste website</title>
-<link rel="stylesheet" href="style.css">
+    <title>Mijn AI</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Welkom op mijn website</h1>
+    <div class="app">
 
-    <p>
-        Dit is mijn eerste zelfgemaakte website.
-    </p>
+        <!-- Sidebar -->
+        <aside class="sidebar">
 
-    <button>Klik op mij</button>
+            <div class="logo">
+                Mijn AI
+            </div>
+
+            <button class="new-chat">
+                + Nieuwe chat
+            </button>
+
+            <div class="chat-history">
+
+                <p class="history-title">
+                    Recente chats
+                </p>
+
+                <button class="history-item">
+                    Mijn eerste gesprek
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Hoofdscherm -->
+        <main class="chat">
+
+            <header class="topbar">
+                <h2>Mijn AI</h2>
+            </header>
+
+
+            <section class="messages" id="messages">
+
+                <div class="welcome">
+
+                    <h1>
+                        Waar kan ik je mee helpen?
+                    </h1>
+
+                    <p>
+                        Stel hieronder een vraag aan je AI.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- Invoerveld -->
+            <div class="input-area">
+
+                <div class="input-box">
+
+                    <textarea
+                        id="messageInput"
+                        placeholder="Stuur een bericht..."
+                        rows="1"
+                    ></textarea>
+
+                    <button id="sendButton">
+                        ↑
+                    </button>
+
+                </div>
+
+                <p class="disclaimer">
+                    AI kan fouten maken. Controleer belangrijke informatie.
+                </p>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
 
 </body>
-<!-- eerste versie van mijn website -->
 
 </html>
